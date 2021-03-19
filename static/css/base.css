@@ -102,20 +102,20 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-/* -------------------------------- bootstrap toasts */
+/* ------------------------------- bootstrap toasts */
 
-.message-container{
+.message-container {
     position: fixed;
     top: 72px;
     right: 15px;
     z-index: 99999999999;
 }
 
-.custom-toast{
+.custom-toast {
     overflow: visible;
 }
 
-.toast-capper{
+.toast-capper {
     height: 2px;
 }
 
