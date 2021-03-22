@@ -10,10 +10,6 @@ from bag.contexts import bag_contents
 
 import stripe
 
-@require_POST
-def cache_checkout_data(request):
-    
-
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
