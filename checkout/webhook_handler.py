@@ -5,6 +5,10 @@ from products.models import Product
 
 import json
 import time
+<<<<<<< HEAD
+=======
+
+>>>>>>> b3d9186074c9111fd855a8176c23e717adf21eaf
 
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
