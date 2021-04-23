@@ -5,14 +5,27 @@ html {
 body {
     color: #555;
     font-family: 'Lato';
+    height: calc(100vh - 164px);
 }
 
-    .display-4.logo-font.text-black {
-        text-align: center;
-    }
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.display-4.logo-font.text-black {
+    text-align: center;
+}
 
 .center{
     text-align: center;
+}
+
+.fa-search{
+    color: #ffffff;
 }
 
 .product-img{
@@ -137,6 +150,23 @@ input[name='q']::placeholder {
     height: 2px;
 }
 
+.footer {
+    text-align: center;
+    border-top: solid;
+}
+
+.social-note{
+    margin-bottom: 0;
+}
+
+li{
+    list-style: none;
+}
+
+i{
+    color: #000;
+}
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
@@ -186,6 +216,11 @@ input[name='q']::placeholder {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.copy-right{
+    background: #000000;
+    color: #ffffff;
 }
 
 /* -------------------------------- Media Queries */
@@ -287,7 +322,6 @@ input[name='q']::placeholder {
     }
 }
 
-
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -299,6 +333,10 @@ input[name='q']::placeholder {
 
     .header-container {
         padding-top: 164px;
+    }
+
+        .carousel-img{
+        height: 44.3vh;
     }
 }
 

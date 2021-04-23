@@ -591,3 +591,6 @@ This project is stored in a GitHub repository and hosted on Heroku.
 
 **This project is purely educational, please contact me if there are any issues with Copyright.**
 behnaz.khoshnood@gmail.com
+
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_footer

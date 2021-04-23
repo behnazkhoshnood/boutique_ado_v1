@@ -138,10 +138,15 @@
     {% block content %}
     {% endblock %}
 
+    <footer class="bg-white w-100 mt-auto">
+        {% include 'includes/footer.html' %}
+    </footer>
+
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
+    <script type="text/javascript" src="assets/js/sendEmail.js"></script>
     {% endblock %}
 
     

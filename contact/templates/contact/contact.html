@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block extra_title %}- {% trans 'Contact' %}{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+        <div class="container">
+                <hr>
+                <h2 class="mb-4">{% trans 'Contact' %}</h2>
+                <hr>
+            <div class="row">
+                <div class="col-10">
+                    <ul class="links">
+                    <li><i class="fas fa-map-marker-alt"></i> mun. Chisinau, str Valea Dicescu 47</li>
+                    <li><i class="fas fa-phone"></i> +(373) 67699396</li>
+                    <li><i class="fas fa-envelope"></i> apinimd@gmail.com</li>
+                    <li><a href="https://wa.me/37367699396" target="_blank"><i class="fab fa-whatsapp"></i> 37367699396</a></li>
+                    </ul>
+                </div>
+            </div>
+                <hr>
+                <h2 class="mb-4">{% trans 'Send a message' %}</h2>
+                <hr>
+            <div class="row">
+                <div class="col-12">
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form | crispy }}
+                        <div class="form-actions">
+                        <button class="btn btn-lg my-btn float-right" type="submit">{% trans "Send" %}</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+{% endblock %}
