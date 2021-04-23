@@ -15,31 +15,13 @@ body {
     text-align: center;
 }
 
-
-.carousel { z-index: -99; } /* keeps this behind all content */
-.carousel .item {
-position: fixed; 
- opacity: 0;
- left:0 !important;
-width: 100%; height: 100%;
--webkit-transition: opacity 0.5s;
--moz-transition: opacity 0.5s;
--ms-transition: opacity 0.5s;
--o-transition: opacity 0.5s;
-transition: opacity 0.5s;
+.product-img{
+    height: 220px;
 }
 
-.carousel .active {
-opacity: 1 !important;
-}
-
-.carousel .left {
-opacity: 1 !important;
--webkit-transition: opacity 0.5s  !important;
--moz-transition: opacity 0.5s  !important;
--ms-transition: opacity 0.5s  !important;
--o-transition: opacity 0.5s  !important;
-transition: opacity 0.5s  !important;
+.navbar-light .navbar-toggler {
+    color: rgb(0 0 0);
+    border-color: rgb(0 0 0 / 58%);
 }
 
 /* from Bulma */
@@ -299,6 +281,13 @@ input[name='q']::placeholder {
 
 
 /* fixed top navbar only on medium and up */
+@media (min-width: 600px) and (max-width: 991px){
+.nav-link:last-child {
+    margin-right: 110px
+    }
+}
+
+
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
